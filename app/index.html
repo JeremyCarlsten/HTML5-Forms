@@ -3,41 +3,54 @@
 <head>
     <meta charset="UTF-8"/>
     <title>HTML5 Forms</title>
+
+    <link rel="stylesheet" href="css/style.css" media="screen"/>
+    <link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+
 </head>
 <body>
-<header>
-    <h1> HTML5 Goodness</h1>
+<main>
+    <header id="mainHeader">
+        <h1> HTML5 Goodness</h1>
 
-    <p>Just creating an example of html5 forms</p>
-</header>
-<section>
-    <form method="POST" action="index.html">
-        <p>
-            <label for="firstName">First Name: </label>
-            <input type="text" name="firstName" id="firstName" placeholder="John" required autofocus/>
-        </p>
-        <p>
-            <label for="lastName">Last Name: </label>
-            <input type="text" name="lastName" id="lastName" placeholder="Doe" required/>
-        </p>
-        <p>
-            <label for="dateOfBirth">Date Of Birth: </label>
-            <input type="date" name="dateOfBirth" id="dateOfBirth" placeholder="04/06/1990" pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}" required/>
-        </p>
-        <p>
-            <label for="phoneNumber">Cell Number: </label>
-            <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="515-602-2782" pattern="[0-9]{3}\-[0-9]{3}\-[0-9]{4}" required/>
-        </p>
-        <p>
-            <label for="range">Range: 0</label>
-            <input type="range" name="range" id="range" min="1" max="10"/>10
-        </p>
-        <p>
-            <label for="monthToStart">Starting Month: </label>
-            <input type="month" name="monthToStart" id="monthToStart" />
-        </p>
-        <input type="submit" value="Sign-Up!" />
-    </form>
-</section>
+        <p class="tagline">Just creating an example of html5 forms</p>
+    </header>
+    <section>
+        <form method="POST" action="index.html">
+            <p>
+                <label for="firstName">First Name: </label>
+                <input type="text" name="firstName" id="firstName" placeholder="John" required autofocus/>
+            </p>
+
+            <p>
+                <label for="lastName">Last Name: </label>
+                <input type="text" name="lastName" id="lastName" placeholder="Doe" required/>
+            </p>
+
+            <p>
+                <label for="dateOfBirth">Date Of Birth: </label>
+                <input type="date" name="dateOfBirth" id="dateOfBirth" placeholder="04/06/1990"
+                       pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}" required/>
+            </p>
+
+            <p>
+                <label for="phoneNumber">Cell Number: </label>
+                <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="515-602-2782"
+                       pattern="[0-9]{3}\-[0-9]{3}\-[0-9]{4}" required/>
+            </p>
+
+            <p>
+                <label for="range">Range: </label>
+                0<input type="range" name="range" id="range" min="1" max="10"/>10
+            </p>
+
+            <p>
+                <label for="monthToStart">Starting Month: </label>
+                <input type="month" name="monthToStart" id="monthToStart"/>
+            </p>
+            <input type="submit" value="Sign-Up!"/>
+        </form>
+    </section>
+</main>
 </body>
 </html>
